@@ -38,12 +38,11 @@
               >Contact</a
             >
           </li>
-          <li class="nav__link">
+          <li class="nav__link click">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              ><i class="fab fa-lightbulb"></i
-            ></a>
+              ><i class="fas fa-adjust"></i></a>
           </li>
         </ul>
       </nav>
@@ -59,15 +58,205 @@
                 <a href="https://www.linkedin.com/in/jesusacamacho/" target="_blank" class="social__link click">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="" class="social__link click">
+                <a href="https://github.com/AJCodes1" target="_blank"  class="social__link click">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="" class="social__link click">
+                <a href="./assets/Jesus Camacho resume 18Sep23.pdf" target="_blank" class="social__link click">
                     <i class="fas fa-file-pdf"></i>
                 </a>
             </div>
         </div>
     </header>
+    <button class="mail__btn" click>
+      <i class="fas fa-envelope"></i>
+    </button>
+    <a href="#projects" class="scroll">
+      <div class="scroll__icon click"></div>
+    </a>
+    <div class="modal">
+      <div class="modal__half modal__about">
+        <h3 class="modal__title modal__title--about">Here's a bit about me</h3>
+        <h4 class="modal__sub-title modal__su-title--about">Full Stack Software Engineer</h4>
+        <p class="modal__para">I'm a 30 year-old <b class="orange">Full Stack Software Engineer</b> with a strong passion for developing websites with great <b class="orange">user experiences.</b>
+          <br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime exercitationem mollitia voluptatem nisi sint ducimus minima adipisci, sit corrupti dolore perspiciatis in, ullam officia vel? Eos porro quisquam illo!
+        </p>
+        <div class="modal__languages">
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/html.png" alt=""> 
+            <span class="language__name">HTML</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/html.png" alt=""> 
+            <span class="language__name">HTML</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/html.png" alt=""> 
+            <span class="language__name">HTML</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/html.png" alt=""> 
+            <span class="language__name">HTML</span>
+          </figure>
+        </div>
+
+      </div>
+      <div class="modal__half modal__contact">
+        <h3 class="modal__title modal__title--contact">
+          Let's have a chat!
+        </h3>
+        <h4 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities</h4>
+        <form id="contact__form" action="">
+          <div class="form__item">
+            <label class="form__item--label">Name</label>
+            <input class="input" name="user_name" type="text" required>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">E-mail</label>
+            <input class="input" name="user_email" type="email" required>
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Message</label>
+            <textarea class="input" name="message" type="text" required></textarea>
+          </div>
+          <button id="contact_submit" class="form__submit">Send it my way</button>
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fas fa-spinner"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--success">Thanks for the message! Looking forward to speaking with you soon.</div>
+      </div>
+      <i class="fas fa-times modal__exit click"></i>
+    </div>
     </section>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="orange">projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="./assets/smartmockups_lmtcmcem.jpg" class="project__img" alt="">
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Car Sales Projects
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript, Vue, Vuex
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora deleniti nulla maxime et error eos ut nihil, at totam, minima vel qui sequi praesentium esse, corporis ipsum fugit distinctio quis?
+                  </p>
+                  <div class="project__description--links">
+                    <a href="#" class="project__description--link">
+                    <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="project__description--link">
+                      <i class="fas fa-link"></i>
+                      </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="./assets/smartmockups_lmtcmcem.jpg" class="project__img" alt="">
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Car Sales Projects
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript, Vue, Vuex
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora deleniti nulla maxime et error eos ut nihil, at totam, minima vel qui sequi praesentium esse, corporis ipsum fugit distinctio quis?
+                  </p>
+                  <div class="project__description--links">
+                    <a href="#" class="project__description--link">
+                    <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="project__description--link">
+                      <i class="fas fa-link"></i>
+                      </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="./assets/smartmockups_lmtcmcem.jpg" class="project__img" alt="">
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Car Sales Projects
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript, Vue, Vuex
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora deleniti nulla maxime et error eos ut nihil, at totam, minima vel qui sequi praesentium esse, corporis ipsum fugit distinctio quis?
+                  </p>
+                  <div class="project__description--links">
+                    <a href="#" class="project__description--link">
+                    <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="project__description--link">
+                      <i class="fas fa-link"></i>
+                      </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+
+        
+        <figure>
+        <img class="footer__logo--img" src="./assets/4L1pXs01.svg" alt="">
+        </figure>
+        <div class="footer__social--list">
+          <a href="#" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+          ">
+            GitHub
+          </a>
+          <a href="#" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+          ">
+            LinkedIn
+          </a>
+          <a href="#" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+          ">
+            Contact
+          </a>
+          <a href="#" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+          ">
+            Resume
+          </a>
+        </div>
+        <div class="footer__copyright">Copyright © 2023 Jesus Camacho</div>
+      </div>
+    </div>
+    </footer>
   </body>
 </html>
